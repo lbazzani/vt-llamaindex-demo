@@ -1,4 +1,7 @@
-This is a [LlamaIndex](https://www.llamaindex.ai/) project using [Next.js](https://nextjs.org/) bootstrapped with [`create-llama`](https://github.com/run-llama/LlamaIndexTS/tree/main/packages/create-llama).
+# Esempio di utilizzo di Llmaindex per corso AI
+
+# Retrieval-Augmented Generation (RAG)
+L'applicazone indicizza un documento PDF che spiega l'utilizzo di una applicazione interna ValueTech. Grazie a llmaindex e openAi API la chat genera risposte a partire dal contenuto del documento
 
 ## Getting Started
 
@@ -61,11 +64,4 @@ docker run \
   <your_app_image_name>
 ```
 
-## Learn More
 
-To learn more about LlamaIndex, take a look at the following resources:
-
-- [LlamaIndex Documentation](https://docs.llamaindex.ai) - learn about LlamaIndex (Python features).
-- [LlamaIndexTS Documentation](https://ts.llamaindex.ai) - learn about LlamaIndex (Typescript features).
-
-You can check out [the LlamaIndexTS GitHub repository](https://github.com/run-llama/LlamaIndexTS) - your feedback and contributions are welcome!
