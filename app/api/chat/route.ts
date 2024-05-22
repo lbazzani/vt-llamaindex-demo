@@ -47,6 +47,13 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    if(messages.length==0 || messages[0].role != "system") { 
+      messages.unshift({
+        role: "system",
+        content: "Sei l'assitente che aiuta gli utenti dell'accademy a risolvere i loro probemi. Rispondi utlizzando le informazioni che ti vengno passate non fornire informazioni prese da altre fornti e non inventare, se non ti viene passata l'infrmazione di che non sai rispondere",
+      } as Message);
+    }
+
     const chatEngine = await createChatEngine();
 
     // Convert message content from Vercel/AI format to LlamaIndex/OpenAI format
